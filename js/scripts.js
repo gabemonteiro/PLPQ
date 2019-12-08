@@ -7,23 +7,35 @@ $(document).ready(function() {
     var commitment = $("select#commitment").val();
     var time = $("select#time").val();
 
-    // // Check to make sure user has made all selections
-    // if (name === "" || age === "unselected" || interests === "unselected" || color === "unselected") {
-    //   alert("Please fill out the entire form.")
-    //   event.preventDefault()
-    //   return;
-    // }
+    // Check to make sure user has made all selections
+    if (name === "" || familiar === "unselected" || experience === "unselected" || commitment === "unselected" || time === "unselected") {
+      alert("Please fill out the entire form.")
+      event.preventDefault();
+      return;
+    }
 
     // 3 Possible Quiz Results
-    if (familiar === "windows" || "macOs" || "iOs" || "android" &&
+    // Start developing a skill in a language response
+    if  (experience === "none" &&
+        (commitment === "undecided" &&
+        (time === "1to5" || "5to10" || "10to20"))) {
+        $("#resultsStart").toggleClass("start");
+        $("#resultsStart .name").text(name);
+        $("#quiz").hide();
+    } else if
         (experience === "html" || "javascript" || "c#" &&
         (commitment === "hobby" || "improve" &&
-        (time === "1to5" || "5to10" || "10to20")))) {
+        (time === "1to5" || "5to10" || "10to20"))) {
         $("#resultsHome").toggleClass("home");
         $("#resultsHome .name").text(name);
         $("#resultsHome .experience").text(experience);
         $("#quiz").hide();
+    } else {
+        $("#resultsBootcamp").toggleClass("bootcamp");
+        $("#resultsBootcamp .name").text(name);
+        $("#resultsBootcamp .experience").text(experience);
+        $("#quiz").hide();
     }
-      event.preventDefault()
- });
-});
+      event.preventDefault();
+      });
+    });
