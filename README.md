@@ -24,7 +24,7 @@ _The quiz is designed to "help" someone select their programming language path b
 
 ## Known Bugs
 
-_Some combinations do not produce a result..._
+_Some combinations do not produce a result...._
 
 ## Support and contact details
 
