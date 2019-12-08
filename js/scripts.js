@@ -19,12 +19,11 @@ $(document).ready(function() {
         (experience === "html" || "javascript" || "c#" &&
         (commitment === "hobby" || "improve" &&
         (time === "1to5" || "5to10" || "10to20")))) {
-        $("#resultsHome").toggleClass(".hidden");
+        $("#resultsHome").toggleClass("home");
         $("#resultsHome .name").text(name);
         $("#resultsHome .experience").text(experience);
         $("#quiz").hide();
     }
-    console.log(experience);
       event.preventDefault()
  });
 });

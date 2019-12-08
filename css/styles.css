@@ -1,3 +1,11 @@
-.hidden {
+.start {
+  display: none;
+}
+
+.home {
+  display: none;
+}
+
+.bootcamp {
   display: none;
 }
