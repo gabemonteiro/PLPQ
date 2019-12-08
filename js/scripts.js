@@ -4,8 +4,8 @@ $(document).ready(function() {
     var name = $("input#name").val();
     var familiar = $("#familiar").val();
     var experience = $("input[type=radio]:checked").val();
-    var interests = $("#interests").val();
-    var color = $("#color-select").val();
+    var commitment = $("select#commitment").val();
+    var time = $("select#time").val();
 
     // Check to make sure user has made all selections
     if (name === "" || age === "unselected" || interests === "unselected" || color === "unselected") {
@@ -13,7 +13,7 @@ $(document).ready(function() {
       event.preventDefault()
       return;
     }
-
+console.log("select#time");
 
       event.preventDefault()
  });
