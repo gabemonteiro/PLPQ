@@ -2,14 +2,6 @@
   display: none;
 }
 
-.start {
-  display: none;
-}
-
-.home {
-  display: none;
-}
-
-.bootcamp {
-  display: none;
+.container {
+  background-color: #a6a6a6;
 }

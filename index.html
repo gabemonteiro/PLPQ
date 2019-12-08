@@ -15,66 +15,66 @@
       </div>
       <form id="quiz">
         <div class="form-group">
-          <div class="input-group">
-            <input id="name" type="text" placeholder="First Name" class="form-control">
-          </div>
+            <div class="input-group">
+              <input id="name" type="text" placeholder="First Name" class="form-control">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="familiar">What system are you familiar with?</label>
           <br>
-          <div class="form-group">
-            <label for="familiar">What system are you familiar with?</label>
-            <br>
-            <select id="familiar" class="form-group" name="interests">
-              <option id="select" value="unselected">Select one:</option>
-              <option id="windows" value="windows">Windows</option>
-              <option id="macOs" value="macOs">MacOS</option>
-            </select>
+          <select id="familiar" class="form-group" name="interests">
+            <option id="select" value="unselected">Select one:</option>
+            <option id="windows" value="windows">Windows</option>
+            <option id="macOs" value="macOs">MacOS</option>
+          </select>
+        </div>
+        <div class=form-group>
+          <label for="experience">
+          Which language do you have some understanding of?
+          </label>
+          <div>
+            <input id="HTML-rb" type="radio" name="experience" value="HTML">
+            <label for="HTML-rb">HTML</label>
           </div>
-          <div class=form-group>
-            <label for="experience">
-              Which language do you have some understanding of?
-            </label>
-            <div>
-              <input id="HTML-rb" type="radio" name="experience" value="HTML">
-              <label for="HTML-rb">HTML</label>
-            </div>
-            <div>
-              <input id="javascript-rb" type="radio" name="experience" value="javascript">
-              <label for="javascript-rb" class="experience">JavaScript</Label>
-            </div>
-            <div>
-              <input id="c#" type="radio" name="experience" value="c#">
-              <label for="c#" class="experience">C#</label>
-            </div>
-            <div>
-              <input id="multiple" type="radio" name="experience" value="multiple">
-              <label for="multiple" class="experience">Multiple</label>
-            </div>
-            <div>
-              <input id="noexp" type="radio" name="experience" value="inexperience">
-              <label class="inexperience">None</label>
-            </div>
+          <div>
+            <input id="javascript-rb" type="radio" name="experience" value="javascript">
+            <label for="javascript-rb" class="experience">JavaScript</Label>
           </div>
-          <div class="form-group">
-            <label for="commitment">How committed are you to learning a programming language?</label>
-            <br>
-            <select id="commitment" class="form-group" name="commitment">
-              <option id="select" value="unselected">Select one:</option>
-              <option id="hobby" value="hobby">I look at this as a hobby.</option>
-              <option id="improve" value="improve">I want to improve my skill set.</option>
-              <option id="career" value="career">I want to turn this into a career!</option>
-              <option id="undecided" value="undecided">Undecided</option>
-            </select>
+          <div>
+            <input id="c#" type="radio" name="experience" value="c#">
+            <label for="c#" class="experience">C#</label>
           </div>
-          <div class="form-group">
-            <label for="time">How many hours per week can you spend learning?</label>
-            <br>
-            <select id="time" class="form-group" name="time">
-              <option id="select" value="unselected">Select one:</option>
-              <option id="1to5" value="1to5">1 - 5</option>
-              <option id="5to10" value="5to10">5 - 10</option>
-              <option id="10to20" value="10to20">10 - 20</option>
-              <option id="20to40" value="20to40">20 - 40+</option>
-            </select>
-            <br>
+          <div>
+            <input id="multiple" type="radio" name="experience" value="multiple">
+            <label for="multiple" class="experience">Multiple</label>
+          </div>
+          <div>
+            <input id="noexp" type="radio" name="experience" value="inexperience">
+            <label class="inexperience">None</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="commitment">How committed are you to learning a programming language?</label>
+          <br>
+          <select id="commitment" class="form-group" name="commitment">
+            <option id="select" value="unselected">Select one:</option>
+            <option id="hobby" value="hobby">I look at this as a hobby.</option>
+            <option id="improve" value="improve">I want to improve my skill set.</option>
+            <option id="career" value="career">I want to turn this into a career!</option>
+            <option id="undecided" value="undecided">Undecided</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="time">How many hours per week can you spend learning?</label>
+          <br>
+          <select id="time" class="form-group" name="time">
+            <option id="select" value="unselected">Select one:</option>
+            <option id="1to5" value="1to5">1 - 5</option>
+            <option id="5to10" value="5to10">5 - 10</option>
+            <option id="10to20" value="10to20">10 - 20</option>
+            <option id="20to40" value="20to40">20 - 40+</option>
+          </select>
+          <br>
         </div>
         <button type="submit" class="btn btn-dark">Submit</button>
       </form>
@@ -82,14 +82,17 @@
     <div id="resultsStart" class="hidden ">
       <h1>You should start studying from home using free resources!</h1>
       <p><span class="name"></span>, based on your answers you should utilize your free time to study. Begin developing your skills in HTML & CSS using free resources. Once you get that down begin learning JavaScript!</p>
+      <a href="https://makeawebsitehub.com/learn-to-code-for-free/">More information</a>
     </div>
     <div id="resultsHome" class="hidden">
       <h1>You should continue to study from home using free resources!</h1>
       <p><span class="name"></span>, based on your answers you should utilize your free time to study. Do fun projects on your own time to hone your skills in <span class="experience"></span>.</p>
+      <a href="https://makeawebsitehub.com/learn-to-code-for-free/">More information</a>
     </div>
     <div id="resultsBootcamp" class="hidden">
       <h1>You should join a local Bootcamp!</h1>
       <p><span class="name"></span>, based on your answers you should find a local bootcamp to perfect your language abilities and further your education.</p>
+      <a href="https://lmgtfy.com/?q=local+coding+bootcamps">Local coding bootcamps</a>
     </div>
   </body>
 </html>

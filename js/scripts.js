@@ -23,7 +23,7 @@ $(document).ready(function() {
         $("#resultsStart .name").text(name);
         $("#quiz").hide();
     }
-
+    // Study from home
     if  (experience === "html" || experience === "javascript" || experience === "c#" &&
         (commitment === "hobby" || commitment === "improve" &&
         (time === "1to5" || time === "5to10" || time === "10to20"))) {
@@ -32,16 +32,14 @@ $(document).ready(function() {
         $("#resultsHome .experience").text(experience);
         $("#quiz").hide();
     }
-
+    // Search for a local bootcamp
     if (experience === "multiple" &&
        (commitment === "career" &&
        (time ==="20to40"))) {
         $("#resultsBootcamp").toggleClass("hidden");
         $("#resultsBootcamp .name").text(name);
-        $("#resultsBootcamp .experience").text(experience);
         $("#quiz").hide();
     }
-    // debugger;
       event.preventDefault();
       });
     });
