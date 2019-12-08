@@ -22,16 +22,20 @@ $(document).ready(function() {
         $("#resultsStart").toggleClass("hidden");
         $("#resultsStart .name").text(name);
         $("#quiz").hide();
-    } else if  (familiar === "windows" || familiar === "macOs" &&
-        (experience === "html" || experience === "javascript" || experience === "c#" &&
+    }
+
+    if  (experience === "html" || experience === "javascript" || experience === "c#" &&
         (commitment === "hobby" || commitment === "improve" &&
-        (time === "1to5" || time === "5to10" || time === "10to20")))) {
+        (time === "1to5" || time === "5to10" || time === "10to20"))) {
         $("#resultsHome").toggleClass("hidden");
         $("#resultsHome .name").text(name);
         $("#resultsHome .experience").text(experience);
         $("#quiz").hide();
-    } else if (commitment === "career" &&
-          (time ==="20to40")) {
+    }
+
+    if (experience === "multiple" &&
+       (commitment === "career" &&
+       (time ==="20to40"))) {
         $("#resultsBootcamp").toggleClass("hidden");
         $("#resultsBootcamp .name").text(name);
         $("#resultsBootcamp .experience").text(experience);
