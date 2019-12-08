@@ -44,10 +44,6 @@
               <label for="javascript-rb" class="experience">JavaScript</Label>
             </div>
             <div>
-              <input id="python-rb" type="radio" name="experience" value="python">
-              <label for="python-rb" class="experience">Python</label>
-            </div>
-            <div>
               <input id="c#" type="radio" name="experience" value="c#">
               <label for="c#" class="experience">C#</label>
             </div>
@@ -81,6 +77,17 @@
         </div>
         <button type="submit" class="btn btn-dark">Submit</button>
       </form>
+      <div id="resultsStart" class="hidden panel container">
+      <h1>You should start studying from home using free resources!</h1>
+      <p><span class="name"></span>, based on your answers you should utilize your free time to study. Begin developing your skills in <span class="experience"></span> using free resources.</p>
+      <div id="resultsHome" class="hidden panel container">
+      <h1>You should study from home using free resources!</h1>
+      <p><span class="name"></span>, based on your answers you should utilize your free time to study. Do fun projects on your own time to hone your skills in <span class="experience"></span>.</p>
+      </div>
+      <div id="resultsBootcamp" class="hidden panel container">
+      <h1>You should join a local Bootcamp!</h1>
+      <p><span class="name"></span>, based on your answers you should find a local bootcamp to perfect your language abilities in <span class="experience"></span>.</p>
+      </div>
     </div>
   </body>
 </html>

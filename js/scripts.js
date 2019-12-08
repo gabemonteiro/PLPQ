@@ -13,7 +13,7 @@ $(document).ready(function() {
       event.preventDefault()
       return;
     }
-console.log("select#time");
+    
 
       event.preventDefault()
  });
