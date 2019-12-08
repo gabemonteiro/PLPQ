@@ -16,26 +16,33 @@ $(document).ready(function() {
 
     // 3 Possible Quiz Results
     // Start developing a skill in a language response
-    if  (experience === "none" &&
+    if  (experience === "inexperience" &&
         (commitment === "undecided" &&
-        (time === "1to5" || "5to10" || "10to20"))) {
-        $("#resultsStart").toggleClass("start");
+        (time === "1to5" || time === "5to10" || time === "10to20" || time === "20to40"))) {
+        $("#resultsStart").toggleClass("hidden");
         $("#resultsStart .name").text(name);
         $("#quiz").hide();
-    } else if
-        (experience === "html" || "javascript" || "c#" &&
-        (commitment === "hobby" || "improve" &&
-        (time === "1to5" || "5to10" || "10to20"))) {
-        $("#resultsHome").toggleClass("home");
+    }
+
+    if  (familiar === "windows" || familiar === "macOs" &&
+        (experience === "html" || experience === "javascript" || experience === "c#" &&
+        (commitment === "hobby" || commitment === "improve" &&
+        (time === "1to5" || time === "5to10" || time === "10to20")))) {
+        $("#resultsHome").toggleClass("hidden");
         $("#resultsHome .name").text(name);
         $("#resultsHome .experience").text(experience);
         $("#quiz").hide();
-    } else {
-        $("#resultsBootcamp").toggleClass("bootcamp");
+    }
+    else if  (familiar === "windows" || familiar === "macOs" &&
+        (experience === "html" || experience === "javascript" || experience === "c#" &&
+        (commitment === "career" &&
+        (time === "20to40")))) {
+        $("#resultsBootcamp").toggleClass("hidden");
         $("#resultsBootcamp .name").text(name);
         $("#resultsBootcamp .experience").text(experience);
         $("#quiz").hide();
     }
+    // debugger;
       event.preventDefault();
       });
     });
